@@ -24,22 +24,23 @@
         </div>
     </div>
 </section>
+
 <!-- Athlètes -->
 
 <section class="athlete">
     <div class="wrapper">
         <div class="athlete__text">
-            <h2>Nos athlètes</h2>
-            <p>
+            <h2 data-scrolly="fromRight">Nos athlètes</h2>
+            <p data-scrolly="fromRight">
                 Nos athlètes sont sélectionnés parmi les meilleurs de leur génération. Sans aucun ajout d’hormones de croissances (à l’exception des Doritos), ils perfoment
                 toujours à leur maximum.
             </p>
         </div>
-                <div class="grid">
+            <div class="grid" data-scrolly="fromBottom">
                 <div class="card">
                     <div class="card__content">
                         <h3>Matt Pratt</h3>
-                    <svg class="icon">
+                    <svg class="icon icon--lg">
                         <use xlink:href="#icon-snow"></use>
                     </svg>
                     </div>
@@ -53,7 +54,7 @@
                 <div class="card">
                     <div class="card__content">
                         <h3>Ben Lavigne</h3>
-                    <svg class="icon">
+                    <svg class="icon icon--lg">
                         <use xlink:href="#icon-skate"></use>
                     </svg>
                     </div>
@@ -65,7 +66,7 @@
                 <div class="card">
                     <div class="card__content">
                         <h3>Jeff White</h3>
-                    <svg class="icon">
+                    <svg class="icon icon--lg">
                         <use xlink:href="#icon-ski"></use>
                     </svg>
                     </div>
@@ -78,12 +79,29 @@
 </section>
 
 <!-- Gallery -->
+<div class="carousel swiper" data-component="Carousel" data-slides="3" data-loop data-autoplay>
+  <div class="wrapper">
+    <h2>Sports en image</h2>
 
-<h2>Sports en image</h2>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="assets/images/swiper1.jpg" alt="Sport 1" />
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/images/swiper2.jpg" alt="Sport 2" />
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/images/swiper3.jpg" alt="Sport 3" />
+      </div>
+    </div>
 
-<img src="assets/images/swiper1.jpg" alt="" />
-<img src="assets/images/swiper2.jpg" alt="" />
-<img src="assets/images/swiper3.jpg" alt="" />
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+
+
 
 
 {% include '_partials/_footer.html' %}
