@@ -35,10 +35,10 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: $breakpoint-md) {
       grid-template-columns: repeat(2, 1fr);
     }
-    @media (max-width: 640px) {
+    @media (max-width: $breakpoint-sm) {
       grid-template-columns: 1fr;
     }
   }
