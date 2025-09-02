@@ -37,6 +37,10 @@
                border-color: var(--color-primary);
                border-radius: 25px;
                padding: 10px 30px;
+               &:hover{
+                text-decoration: none;
+                color: var(--color-white);
+               }
             }
         }
     }

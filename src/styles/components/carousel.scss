@@ -1,66 +1,55 @@
 .carousel {
-  .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-
-  h2 {
-    font-family: var(--font-primary);
-    font-size: var(--font-size-h2);
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .swiper {
     position: relative;
+    h2{
+        font-family: var(--font-primary);
+        font-weight: 600;
+        color: var(--color-black);
+        font-size: var(--font-size-h3);
+        text-align: right;
+    }
+  .swiper {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    position: relative;
+    height: 60vh; 
   }
 
   .swiper-wrapper {
-    align-items: center;
+    display: flex;
   }
 
   .swiper-slide {
+    flex: 0 0 100%;
     img {
       width: 100%;
-      height: auto;
-      border-radius: 12px;
+      height: 100%;
       object-fit: cover;
+      display: block;
     }
   }
 
- 
-  .swiper-pagination-bullets {
+  .swiper-pagination {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
     display: flex;
-    justify-content: center;
-    position: static;
-    margin-top: 20px;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1;
   }
 
   .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    border: 2px solid var(--color-quaternary);
+    width: 31px;
+    height: 31px;
     border-radius: 50%;
-    opacity: 1;
-    background: transparent;
+    background: var(--color-black);
     transition: all 0.3s ease;
   }
 
   .swiper-pagination-bullet-active {
-    background: var(--color-quaternary);
+    background: var(--color-primary);
     transform: scale(1.2);
-  }
-
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    color: var(--color-quaternary);
-    transition: opacity 0.3s;
-  }
-
-  .swiper-button-prev:hover,
-  .swiper-button-next:hover {
-    opacity: 0.7;
   }
 }
