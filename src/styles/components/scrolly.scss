@@ -1,0 +1,61 @@
+.has-js {
+    [data-scrolly='fromBottom'] {
+        opacity: 0;
+        transform: translateY(60px);
+        transition: all 1s $ease-out-expo;
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromLeft'] {
+        opacity: 0;
+        transform: translateX(-60px);
+        transition: all 1s $ease-out-expo;
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='fromTop'] {
+        opacity: 0;
+        transform: translateY(-60px);
+        transition: all 1s $ease-out-expo;
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromRight'] {
+        opacity: 0;
+        transform: translateX(60px);
+        transition: all 1s $ease-out-expo;
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='newAnimScrollyOne'] {
+        opacity: 0;
+        transform: translateY(40px) rotate(-10deg);
+        transition: all 1s $ease-out-expo;
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0) rotate(0deg);
+        }
+    }
+
+    [data-scrolly='flip'] {
+        opacity: 0;
+        transform: perspective(400px) rotateX(-90deg);
+        transition: all 1s $ease-out-expo;
+        &.is-active {
+            opacity: 1;
+            transform: perspective(400px) rotateX(0deg);
+        }
+    }
+}
