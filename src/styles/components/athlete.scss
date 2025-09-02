@@ -1,0 +1,18 @@
+.athlete {
+    height: 100%;
+    padding: 0;
+    .wrapper {
+        .athlete__text{
+            text-align: right;
+            h2{
+                font-family: var(--font-primary);
+                color: var(--color-black);
+                margin-bottom: 0;
+                font-weight: 600;
+            }
+            p{
+                width: 100%;
+            }
+        }
+    }
+}
