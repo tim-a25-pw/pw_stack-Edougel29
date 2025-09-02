@@ -10,20 +10,31 @@
         <script src="scripts/main.js" defer></script>
     </head>
     
-<!-- Header -->
+    <body data-component="Scrolly">
 
-<a href="#">
-    <svg class="icon">
-        <use xlink:href="#icon-logo"></use>
-    </svg>
-    tim canada
-</a>
-<nav>
-    <ul>
-        <li><a href="#">Athlètes</a></li>
-        <li><a href="#">Disciplines</a></li>
-        <li><a href="#">Programmes</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
-    <body>
+        <!-- Header -->
+        <header class="header" data-component="Header" data-threshold="0.1"> 
+            <div class="wrapper">
+                    <a class="logo" href="#">
+                        <svg class="icon icon--md">
+                            <use xlink:href="#icon-logo"></use>
+                        </svg>
+                        tim québec
+                    </a>
+                <div class="header__menu">
+                    <nav class="nav-primary">
+                        <ul>
+                            <li><a href="#">Athlètes</a></li>
+                            <li><a href="#">Disciplines</a></li>
+                            <li><a href="#">Programmes</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button class="header__toggle js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>

@@ -1,6 +1,6 @@
 header {
-    background-color: var(--color-bg-secondary);
-    padding: 15px 0;
+    background-color: var(--color-bg-primary);
+    padding: 25px 0;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -10,14 +10,18 @@ header {
         align-items: center;
         .logo {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            color: var(--color-white);
+            color: var(--color-black);
+            font-family: var(--font-primary);
+            font-weight: 900;
+            font-size: 35px;
+            width: 100%;
+            gap: 30px;
 
             .icon {
+                fill: var(--color-primary);
                 display: block;
-                height: 44px;
-                width: 212px;
+
             }
             .logo-mobile {
                 display: none;
@@ -35,45 +39,42 @@ header {
                 }
             }
             &:hover {
-                color: var(--color-quaternary);
+                color: var(--color-primary);
+                text-decoration: none;
             }
         }
-        .header__menu {
+        .header__menu .nav-primary {
             display: flex;
             align-items: center;
             justify-content: flex-end;
             width: 100%;
             margin-left: 30px;
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            
             .icon--xl {
-                color: var(--color-white);
+                color: var(--color-black);
                 width: 250px;
                 &:hover {
-                    color: var(--color-quaternary);
+                    color: var(--color-black);
                 }
             }
             ul {
                 display: flex;
                 align-items: center;
-                color: var(--color-white);
+                color: var(--color-black);
                 list-style: none;
                 padding: 0;
                 margin: 0;
                 gap: 50px;
-                .icon--lg {
-                    width: 47px;
-                    height: 47px;
-                }
 
                 a {
-                    color: var(--color-white);
+                    color: var(--color-black);
                     text-decoration: none;
                     &:hover {
-                        color: var(--color-quaternary);
-                    }
-                }
-                .button {
-                    &:hover {
-                        color: var(--color-white);
+                        color: var(--color-primary);
                     }
                 }
                 @media screen and (max-width: $breakpoint-md) {
